@@ -1,0 +1,16 @@
+---
+###########################################################################################################
+###########################COMPARTMENT_OCID'S##############################################################
+
+1st_COMP: "ocid1.compartment.oc1..aaaaaaaailxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+2nd_COMP: "ocid1.compartment.oc1..aaaaaaaaeyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+3rd_COMP: "ocid1.compartment.oc1..aaaaaaaa5zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+4th_COMP: "ocid1.compartment.oc1..aaaaaaaawxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+###########################################################################################################
+###########################DISPLAY_NAMES PER COMPARMENT####################################################
+
+firstList:  []
+secondList: []
+thirdList:  []
+fourthList: []

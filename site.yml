@@ -1,0 +1,11 @@
+---
+- name: Start OCI instances
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+    - role: start
+      tags: start
+    - role: stop
+      tags: stop

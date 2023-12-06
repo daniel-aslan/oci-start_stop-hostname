@@ -1,0 +1,16 @@
+---
+- name: Import First.yaml
+  ansible.builtin.include_tasks:
+    file: first.yaml
+
+- name: Import Second.yaml
+  ansible.builtin.include_tasks:
+    file: second.yaml
+
+- name: Import Third.yaml
+  ansible.builtin.include_tasks:
+    file: third.yaml
+
+- name: Import Fourth.yaml
+  ansible.builtin.include_tasks:
+    file: fourth.yaml

@@ -1,0 +1,24 @@
+---
+- name: Get ocid compartments.
+  oracle.oci.oci_compute_instance_facts:
+    compartment_id: "{{ second_COMP }}"
+    lifecycle_state: "RUNNING"
+  register: result
+
+- name: Filter out display_names and ocid's.
+  ansible.builtin.set_fact:
+    display_ocinames: "{{ result | community.general.json_query('instances[*].[display_name , id]') }}"
+
+- name: List results for maps - 2
+  ansible.builtin.set_fact:
+    hnames: "{{ hnames + [item[1]] }}"
+  when: secondList is contains(item[0])
+  loop: "{{ display_ocinames }}"
+  ignore_errors: true
+
+- name: Stop the instances
+  oracle.oci.oci_compute_instance_actions:
+    instance_id: "{{ item[1] }}"
+    action: softstop
+  loop: "{{ display_ocinames }}"
+
