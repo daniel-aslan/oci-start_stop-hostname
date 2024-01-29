@@ -1,4 +1,3 @@
-# Name
 # OCI-START_STOP-HOSTNAMES
 
 Description
